@@ -12,6 +12,10 @@ git reset --soft <commit_id>
 git push -f origin master
 
 
+git忽略已经被提交的文件
+
+git rm -r --cached ignore_file
+更新 .gitignore 忽略掉目标文件
 
 1：git reset -–mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和index信息
 2：git reset –-soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可
