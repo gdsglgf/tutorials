@@ -1,0 +1,63 @@
+# fatal: destination path 'xxx' already exists and is not an empty directory
+cd xxx
+git init
+git remote add origin https://github.com/xxx/xxx.git
+git pull origin master
+
+# 强制提交
+git push -u origin master
+
+
+git reset --soft <commit_id>
+git push -f origin master
+
+
+
+1：git reset -–mixed：此为默认方式，不带任何参数的git reset，即时这种方式，它回退到某个版本，只保留源码，回退commit和index信息
+2：git reset –-soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可
+3：git reset –-hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容
+
+
+// 设置全局
+git config --global user.name "Author Name"
+git config --global user.email "Author Email"
+
+// 或者设置本地项目库配置
+git config user.name "Author Name"
+git config user.email "Author Email"
+
+
+如果只需要最近一次提交，那么很简单直接使用Git commit –amend就可以搞定
+
+git commit --amend --author="NewAuthor <NewEmail@address.com>"
+git push --force --tags origin 'refs/heads/*'
+
+
+
+修改多次提交
+
+https://help.github.com/articles/changing-author-info/
+
+git clone --bare https://github.com/user/repo.git
+cd repo.git
+
+#!/bin/sh
+
+git filter-branch --env-filter '
+OLD_EMAIL="your-old-email@example.com"
+CORRECT_NAME="Your Correct Name"
+CORRECT_EMAIL="your-correct-email@example.com"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+
+
+git push --force --tags origin 'refs/heads/*'

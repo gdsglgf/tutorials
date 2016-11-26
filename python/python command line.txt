@@ -1,0 +1,25 @@
+http://www.cnblogs.com/klchang/p/4543032.html
+
+命令行下查看python和numpy的版本和安装位置
+
+1、查看python版本
+方法一：
+　　python -V
+　　注意：‘-V‘中‘V’为大写字母，只有一个‘-’
+方法二：
+　　python --version　　
+　　注意：‘--version'中有两个‘-’
+2、查看python安装位置
+方法一：　
+　　python -c "import sys; print sys.executable"
+方法二：
+　　python -c "import os; print os.sys.executable"
+　　python -c "import os; path = os.sys.executable;folder=path[0 : path.rfind(os.sep)]; print folder"
+3、查看Numpy版本
+python -c "import numpy; print numpy.version.version"
+或
+python -c "import numpy; print numpy.__version__"
+4、查看Numpy安装路径
+python -c "import numpy; print numpy.__file__"
+ 
+注：按照查看Numpy版本和安装路径的方法，可以查看其他python包版本和安装路径

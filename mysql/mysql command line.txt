@@ -1,0 +1,90 @@
+
+查看mysql文件安装路径
+whereis mysql
+which mysql
+
+mysql配置文件/etc/my.cnf
+
+查看mysql进程
+ps -el | grep mysqld
+
+kill掉系统里的MySQL进程
+killall -TERM mysqld
+
+
+查看MySQL服务的启动状态
+service mysqld status
+
+启动MySQL的服务
+service mysqld start
+
+登录(用户名root, 密码123456)
+mysql -u root -p 123456
+
+查看MySQL版本
+select version();
+
+显示数据库列表
+show databases; 
+
+显示库中的数据表： 
+use mysql； ／／打开库
+show tables; 
+
+显示数据表的结构： 
+describe 表名; 
+或者
+desc 表名; 
+
+建库： 
+create database 库名; 
+
+建表： 
+use 库名； 
+create table 表名 (字段设定列表)； 
+
+删库和删表: 
+drop database 库名; 
+drop table 表名； 
+
+将表中记录清空： 
+delete from 表名; 
+
+显示表中的记录： 
+select * from 表名;
+
+关闭服务
+service mysqld stop
+
+
+
+忘记mysql的root密码解决方法
+
+1. 用以下命令启动MySQL，以不检查权限的方式启动； 
+mysqld --skip-grant-tables &
+
+2. 然后用空密码方式使用root用户登录 MySQL； 
+mysql -u root
+
+3. 修改root用户的密码； 
+mysql> update mysql.user set password=PASSWORD('newpassword') where User='root'; 
+mysql> flush privileges; 
+mysql> quit 
+
+4. 重新启动MySQL
+
+
+
+# mysql tool
+
+xampp
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+
+
+navicat
+安装：解压后即可用。目录下的start_navicat文件为可执行文件。
+
+—-第一次执行start_navicat时，会在用户主目录下生成一个名为.navicat的隐藏文件夹。
+
+—-把此文件夹删除后(删除文件夹命令是rm -rf ~/.navicat)，下次启动navicat 会重新生成此文件夹，30天试用期会按新的时间开始计算。

@@ -1,0 +1,53 @@
+Python图像处理库 Pillow
+http://pillow.readthedocs.io/en/3.3.x/reference/Image.html
+
+from PIL import Image
+
+im = Image.open("bride.jpg")
+im.show()
+
+
+
+使用函数convert()来进行转换，它是图像实例对象的一个方法，接受一个 mode 参数，用以指定一种色彩模式，mode 的取值可以是如下几种：
+
+· 1 (1-bit pixels, black and white, stored with one pixel per byte)
+· L (8-bit pixels, black and white)
+· P (8-bit pixels, mapped to any other mode using a colour palette)
+· RGB (3x8-bit pixels, true colour)
+· RGBA (4x8-bit pixels, true colour with transparency mask)
+· CMYK (4x8-bit pixels, colour separation)
+· YCbCr (3x8-bit pixels, colour video format)
+· I (32-bit signed integer pixels)
+· F (32-bit floating point pixels)
+
+常用操作
+
+保存 Image.save(fp, format=None, **params)
+
+合成 Image.blend(image1, image2, alpha) / Image.composite(image1, image2, mask)
+
+缩略图 thumbnail(size,filter=None)  
+Modifies in-place,Preserves aspect ratio
+>>> myImage.thumbnail ((128, 128), Image.ANTIALIAS)
+
+剪切 crop(bbox)
+>>> bounds = (100, 100, 400, 400)
+>>> cutoutIm = myImage.crop (bounds)
+
+粘贴 paste(i2,where,mask=None)/paste(color,box=None,mask=None)
+
+缩放 resize(size)
+>>> dst = img.resize((128, 128))
+
+旋转 rotate(theta)
+rotated around its center
+>>> dst = img.rotate(45) # 顺时针角度表示
+
+翻转旋转 transpose(method)
+ROTATE_90/180/270(clockwise), FLIP_TOP_BOTTOM(horizontal), FLIP_RIGHT_LEFT(vertical)
+>>> fixedIm = myImage.transpose (ROTATE_90)
+>>> dst = im.transpose(Image.FLIP_LEFT_RIGHT) #左右互换
+>>> dst = im.transpose(Image.FLIP_TOP_BOTTOM) #上下互换
+>>> dst = im.transpose(Image.ROTATE_90)  #顺时针旋转
+>>> dst = im.transpose(Image.ROTATE_180)
+>>> dst = im.transpose(Image.ROTATE_270)

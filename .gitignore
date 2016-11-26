@@ -1,0 +1,8 @@
+
+# tensorflow>image_recognition
+imagenet/
+
+# tensorflow>mnist
+tmp/
+model/
+MNIST_data/

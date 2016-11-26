@@ -1,0 +1,64 @@
+sudo pip install -U numpy -i https://pypi.mirrors.ustc.edu.cn/simple
+
+sudo pip install scipy --upgrade -i https://pypi.mirrors.ustc.edu.cn/simple
+
+
+export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.10.0-py2-none-any.whl
+
+sudo pip install --upgrade $TF_BINARY_URL -i https://pypi.mirrors.ustc.edu.cn/simple
+
+
+
+
+$ python -c 'import numpy; print (numpy.version.version)'
+python -c 'import numpy; print (numpy.version)'
+
+python -c 'import scipy; print (scipy.version.version)'
+python -c 'import scipy; print (scipy.version)'
+
+
+
+This problem caused me so much stress and frustration, but your answer finally fixed it! For OS X El Capitan users like me, you should first disable System Integrity Protection (rootless) as follows:
+
+Reboot your mac and hold Cmd+R at the startup chime.
+Chose Terminal>Utilities from the top menu bar.
+Type: csrutil disable; reboot
+Now remove the system's numpy using the command: sudo rm -rf /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy
+
+
+
+/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/
+/Library/Python/2.7/site-packages/
+~/Library/Python/2.7/lib/python/site-packages/
+
+
+
+sudo easy_install --find-links http://www.pythonware.com/products/pil/ Imaging
+
+sudo easy_install --upgrade six
+
+sudo rm -rf /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/six
+
+
+
+PIL(Python Imaging Library)是python处理图片的库，Pillow is the “friendly PIL fork”。
+PIL最新版本是 1.1.7, 最近的更新是在2009年。推荐使用Pillow。
+
+
+
+# install Homebrew
+
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install libjpeg
+
+
+sudo easy_install --find-links http://www.pythonware.com/products/pil/ Imaging
+
+
+
+sudo pip install Pillow
+
+
+sudo pip install MySQL-python -i https://pypi.mirrors.ustc.edu.cn/simple
+
