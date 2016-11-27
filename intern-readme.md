@@ -316,3 +316,10 @@ tmp = os.system('cls')
 import os
 tmp = os.system('clear')
 ```
+
+Get python version
+```python
+import sys
+print(sys.version_info)
+version = sys.version_info[0]
+```
