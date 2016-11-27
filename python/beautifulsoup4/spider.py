@@ -19,7 +19,8 @@ else:
 
 
 url = 'http://yuedu.fm/'
-header = {'User-agent' : 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5'}
-req = Request(url, headers=header)
-res = urlopen(req).read()
+headers = {'User-agent' : 'Mozilla/5.0 (Windows; U; Windows NT 5.1; de; rv:1.9.1.5) Gecko/20091102 Firefox/3.5.5'}
+req = Request(url, headers=headers)
+res = urlopen(req).read().decode('utf-8')
+print(type(res))
 print(res)
