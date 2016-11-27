@@ -21,6 +21,10 @@ service mysqld start
 登录(用户名root, 密码123456)
 mysql -u root -p 123456
 
+查看数据库状态
+use db_name;
+status;
+
 查看MySQL版本
 select version();
 

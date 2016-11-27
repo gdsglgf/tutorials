@@ -1,0 +1,40 @@
+
+http://blog.chinaunix.net/uid-25266990-id-3344584.html
+
+1> 导出表结构：
+
+mysqldump -uroot -p --default-character-set=utf8 -d databasename > createtab.sql
+
+其中--default-character-set=utf8 表示设置以什么字符集连接，　-d 表示只导出表结构，不导出数据。
+
+2>修改　createtab.sql 中表结构定义中的字符集为新的字符集。
+
+sed -i s/CHARSET=latin1/CHARSET=utf8/g `grep -rl "CHARSET=latin1" createtab.sql `
+
+3>确保记录不再更新，导出所有记录。
+
+mysqldump -uroot -p --no-create-info databasename > data.sql
+
+可选参数：
+--quick: 该选项用于转储大的表。　它强制　mysqldump 从服务器一次一行地检索表中的行而不是　检索所有行，并在输出前将它缓存到内存中。
+--extended-insert: 使用包括几个　values 列表的多行insert语法，这样使转储文件更小，重载文件时可以加速插入。
+--no-create-info: 不写重新创建每个转储表的create table 语句。
+--default-character-set=latin1: 按照原有的字符集导出所有数据，这样导出的文件中，所有中文都是可见的，不会保存成乱码。不添加该参数以默认字符导出。
+
+4>打开data.sql,将　set names latin1 修改成　set names utf8 。
+
+sed -i s/CHARSET=latin1/CHARSET=utf8/g `grep -rl "CHARSET=latin1" data.sql `
+
+(PS：sed工作效率是非常高的，在测试中60G的数据4分钟就转换完毕了）
+
+5>使用新的字符集创建新的数据库。
+
+create database new_databasename default charset utf8;
+
+6>创建表，执行　createtab.sql
+
+mysql -uroot -p new_databasename < createtab.sql
+
+7>导入数据，执行data.sql
+
+mysql -uroot -p new_databasename < data.sql
