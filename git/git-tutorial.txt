@@ -4,6 +4,19 @@ git init
 git remote add origin https://github.com/xxx/xxx.git
 git pull origin master
 
+
+从远程获取最新版本并merge到本地, 而本地文件做了修改, 出现错误
+git pull origin master
+error: Your local changes to the following files would be overwritten by merge
+Please, commit your changes or stash them before you can merge.
+
+忽略本地修改,保留远程最新代码, 处理方法如下:
+git stash
+git pull origin master
+git stash pop
+然后可以使用git diff -w +文件名 来确认代码自动合并的情况.
+
+
 # 强制提交
 git push -u origin master
 

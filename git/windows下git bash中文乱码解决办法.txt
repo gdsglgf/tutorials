@@ -1,0 +1,32 @@
+windows下git bash中文乱码解决办法
+
+一.解决办法1：
+1.在git bash下，右键，选择options：
+
+2.选择“Text”
+
+3.将“Character set”设置为  UTF-8
+
+二.解决办法2：(在上述办法1中，如果在git  bash中，右键没有菜单的情况下)
+进入git安装目录，通常是C:\Program Files (x86)\Git\
+1. 编辑etc\gitconfig文件，在文件末尾增加以下内容：
+
+[gui]
+    encoding = utf-8  #代码库统一使用utf-8
+[i18n]
+    commitencoding = utf-8  #log编码
+[svn]
+    pathnameencoding = utf-8  #支持中文路径
+
+2. 编辑etc\git-completion.bash文件,在文件末尾增加以下内容：
+
+alias ls='ls --show-control-chars --color=auto'  #ls能够正常显示中文
+
+3. 编辑etc\inputrc文件，修改output-meta和convert-meta属性值：
+
+set output-meta on  #bash可以正常输入中文
+set convert-meta off
+
+4. 编辑profile文件，在文件末尾添加如下内容：
+
+export LESSHARESET=utf-8

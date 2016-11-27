@@ -1,3 +1,5 @@
+# tmp file
+tmp.*
 
 # tensorflow>image_recognition
 imagenet/
