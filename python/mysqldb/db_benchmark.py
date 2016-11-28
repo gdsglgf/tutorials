@@ -114,46 +114,52 @@ class DBUtil:
 	@staticmethod
 	def insert(sql, param):
 		try:
-			cursor.execute(sql, param)
-			db.commit()
+			DBUtil.cursor.execute(sql, param)
+			DBUtil.db.commit()
 		except Exception, e:
 			print(e)
-			db.rollback()
+			DBUtil.db.rollback()
 
 	@staticmethod
 	def init_db():
-		cursor.execute("drop table if exists t_article")
+		DBUtil.cursor.execute("drop table if exists t_article")
 		sql = '''CREATE TABLE t_article(
 					id int(10) NOT NULL AUTO_INCREMENT,
 					content text NOT NULL,
 					creation_time datetime,
 					PRIMARY KEY (id)
 				) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;'''
-		cursor.execute(sql)
+		DBUtil.cursor.execute(sql)
 
 	@staticmethod
 	def close():
-		cursor.close()
-		db.close()
+		DBUtil.cursor.close()
+		DBUtil.db.close()
 
 
-def run1(num_epochs=10, batch_size=1000):
+def run1(num_epochs=100, batch_size=1000):
 	DBUtil.init_db()
+	time_count = 0
 	for i in range(num_epochs):
 		start_time = time.time()
 		for j in range(batch_size):
 			execute(DBUtil.INSERT_SQL, [sample(), formated_time()])
 		duration = time.time() - start_time
 		print('step %d: %.1f sqls/sec; %.3f sec/batch' %(i, batch_size / duration, duration))
+		time_count += duration
+	print('%.1f sqls/sec; %.3f sec/epoch' %(num_epochs * batch_size / time_count, time_count / num_epochs))
 
-def run2(num_epochs=10, batch_size=1000):
+def run2(num_epochs=100, batch_size=1000):
 	DBUtil.init_db()
+	time_count = 0
 	for i in range(num_epochs):
 		start_time = time.time()
 		for j in range(batch_size):
 			DBUtil.insert(DBUtil.INSERT_SQL, [sample(), formated_time()])
 		duration = time.time() - start_time
 		print('step %d: %.1f sqls/sec; %.3f sec/batch' %(i, batch_size / duration, duration))
+		time_count += duration
+	print('%.1f sqls/sec; %.3f sec/epoch' %(num_epochs * batch_size / time_count, time_count / num_epochs))
 
 
 def run_benchmark():
@@ -162,6 +168,12 @@ def run_benchmark():
 	print('benchmark2:')
 	run2()
 
+def run_benchmark2():
+	print('benchmark2:')
+	run2()
+	print('benchmark1:')
+	run1()
 
 if __name__ == '__main__':
 	run_benchmark()
+	run_benchmark2()
