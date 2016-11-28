@@ -1,7 +1,7 @@
 from datetime import datetime
 import random
 import time
-# import MySQLdb
+import MySQLdb
 
 fourteens = '''From fairest creatures we desire increase,
 That thereby beauty's rose might never die,
@@ -110,6 +110,7 @@ class DBUtil:
 
 	# def __init__(self, arg):
 	# 	self.arg = arg
+
 	@staticmethod
 	def insert(sql, param):
 		try:
