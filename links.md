@@ -11,6 +11,7 @@ PEP 8 -- Style Guide for Python Code<br>
 https://www.python.org/dev/peps/pep-0008/
 
 Lib/HTMLParser.py source code<br>
+https://docs.python.org/2/library/htmlparser.html<br>
 http://fulerbakesi.iteye.com/blog/1589102
 
 ## Markdown

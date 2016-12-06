@@ -8,3 +8,6 @@ imagenet/
 tmp/
 model/
 MNIST_data/
+
+# python
+*.pyc
