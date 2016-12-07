@@ -1,0 +1,43 @@
+
+## Spring Boot
+
+o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+tomcat-embed-core 没有下载成功
+
+remove the jar file
+maven update
+
+
+
+Whitelabel Error Page
+
+This application has no explicit mapping for /error, so you are seeing this as a fallback.
+
+Sat Dec 03 11:48:32 CST 2016
+There was an unexpected error (type=Internal Server Error, status=500).
+No converter found for return value of type: class java.util.HashMap
+
+返回json出错
+
+Eclipse 打开jar包jackson-databind-2.8.4下的class文件，提示
+invalid LOC header (bad signature)
+说明jar包没有下载成功
+
+remove the jar file
+maven update
+
+
+http://stackoverflow.com/questions/33832735/spring-boot-application-no-converter-found-for-return-value-of-type
+
+
+
+spark
+http://spark.apache.org/docs/latest/quick-start.html
+给出的例子有错, 类名不能加引号, 改为(--class SimpleApp)
+# Use spark-submit to run your application
+$ YOUR_SPARK_HOME/bin/spark-submit \
+  --class "SimpleApp" \
+  --master local[4] \
+  target/scala-2.11/simple-project_2.11-1.0.jar
+
+具体参数http://spark.apache.org/docs/latest/submitting-applications.html
