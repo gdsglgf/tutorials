@@ -39,3 +39,8 @@ http://www.nationalgeographic.com.cn/index.php?m=content&c=feed
 http://rss.sina.com.cn/tech/rollnews.xml<br>
 http://blog.csdn.net/gtuu0123/article/details/4949262
 
+## stackoverflow
+http://stackoverflow.com/questions/4834721/java-read-bz2-file-and-uncompress-parse-on-the-fly
+http://stackoverflow.com/questions/3402735/what-is-simplest-way-to-read-a-file-into-string
+http://stackoverflow.com/questions/3038392/do-java-arrays-have-a-maximum-size
+http://stackoverflow.com/questions/373833/best-xml-parser-for-java
