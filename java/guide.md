@@ -40,7 +40,25 @@ http://rss.sina.com.cn/tech/rollnews.xml<br>
 http://blog.csdn.net/gtuu0123/article/details/4949262
 
 ## stackoverflow
-http://stackoverflow.com/questions/4834721/java-read-bz2-file-and-uncompress-parse-on-the-fly
-http://stackoverflow.com/questions/3402735/what-is-simplest-way-to-read-a-file-into-string
-http://stackoverflow.com/questions/3038392/do-java-arrays-have-a-maximum-size
-http://stackoverflow.com/questions/373833/best-xml-parser-for-java
+http://stackoverflow.com/questions/4834721/java-read-bz2-file-and-uncompress-parse-on-the-fly<br>
+http://stackoverflow.com/questions/3402735/what-is-simplest-way-to-read-a-file-into-string<br>
+http://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java<br>
+http://stackoverflow.com/questions/3038392/do-java-arrays-have-a-maximum-size<br>
+http://stackoverflow.com/questions/373833/best-xml-parser-for-java<br>
+
+
+## xml parser
+http://www.w3school.com.cn/jsref/prop_node_nodetype.asp
+### DOM, SAX, JDOM, StAX, XPath, DOM4J
+https://www.tutorialspoint.com/java_xml/java_xml_parsers.htm
+### DOM、SAX、JDOM和DOM4J四种生成和解析XML文档的方法详解（介绍+优缺点比较+示例）
+http://www.cnblogs.com/lanxuezaipiao/archive/2013/05/17/3082949.html
+### Java 处理 XML 的三种主流技术及介绍(DOM, SAX, Digester)
+http://www.ibm.com/developerworks/cn/xml/dm-1208gub/
+### DOM XML Parser解析、遍历、创建XML
+http://blog.csdn.net/andie_guo/article/details/24844351
+### SAX XML Parser解析、生成XML文件
+http://blog.csdn.net/andie_guo/article/details/24851077
+
+## html parser
+Jsoup, htmlparser
