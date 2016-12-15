@@ -18,3 +18,8 @@ https://github.com/Runscope/httpbin
 
 ## Github
 https://github.com/qiyeboy/spider_smooc/<br>
+
+## cdn
+http://www.bootcdn.cn/
+http://www.bootcdn.cn/jquery/
+http://www.bootcdn.cn/bootstrap/
