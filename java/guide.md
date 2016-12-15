@@ -62,3 +62,15 @@ http://blog.csdn.net/andie_guo/article/details/24851077
 
 ## html parser
 Jsoup, htmlparser
+http://blog.csdn.net/lubeijing2008xu/article/details/8019712
+http://free0007.iteye.com/blog/1131163
+http://www.cnblogs.com/coding-hundredOfYears/archive/2012/12/15/2819217.html
+
+
+## Message Queue
+http://kafka.apache.org/
+	http://blog.jobbole.com/75328/
+
+http://activemq.apache.org/
+	http://www.cnblogs.com/xwdreamer/archive/2012/02/21/2360818.html
+	http://shmilyaw-hotmail-com.iteye.com/blog/1897635
