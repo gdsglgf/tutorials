@@ -1,3 +1,6 @@
+Sublime text 3 (Build 3114) key
+https://fatesinger.com/78252
+
 安装Sublime Text插件的方法：
 
 1.直接安装
