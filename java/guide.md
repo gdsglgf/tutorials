@@ -76,3 +76,8 @@ http://kafka.apache.org/
 http://activemq.apache.org/
 	http://www.cnblogs.com/xwdreamer/archive/2012/02/21/2360818.html
 	http://shmilyaw-hotmail-com.iteye.com/blog/1897635
+
+
+## JAVA EE
+http://lib.csdn.net/zhhy88/chart/Struts2
+http://lib.csdn.net/sinat_36900848/chart/Java%20EE
