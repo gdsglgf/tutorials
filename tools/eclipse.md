@@ -66,3 +66,12 @@ Window-->Preferences-->General-->Content Types-->Default encoding
 Window-->Preferences-->Web-->JSP Files-->Encoding
 
 
+## eclipse 开启断言
+```
+assert bool-expression
+assert bool-expression : error-message-string
+
+java -ea
+
+run configurations-->arguments-->vm arguments中添加 -ea 参数
+```
