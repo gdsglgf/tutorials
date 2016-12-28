@@ -1,0 +1,9 @@
+
+查询表名为tableName的auto_increment值：
+SELECT AUTO_INCREMENT FROM information_schema.tables WHERE table_name="tableName";
+
+修改表名为tableName的auto_increment值：
+ALTER TABLE tableName AUTO_INCREMENT=number;
+
+修改表名为tableName列名为columnName添加唯一索引
+ALTER TABLE tableName ADD UNIQUE(columnName);
