@@ -7,3 +7,8 @@ ALTER TABLE tableName AUTO_INCREMENT=number;
 
 修改表名为tableName列名为columnName添加唯一索引
 ALTER TABLE tableName ADD UNIQUE(columnName);
+
+创建数据库bdname
+CREATE DATABASE bdname DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
