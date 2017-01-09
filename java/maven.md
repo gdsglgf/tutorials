@@ -35,3 +35,7 @@ mvn package -Dmaven.test.skip=true
 命令行执行: mvn clean compile assembly:single
 - http://www.jianshu.com/p/b6946b104b8e
 - http://www.cnblogs.com/highriver/archive/2012/03/28/2421917.html
+
+# eclipse maven建立多模块工程
+- http://juvenshun.iteye.com/blog/305865
+- http://www.tuicool.com/articles/RzyuAj
