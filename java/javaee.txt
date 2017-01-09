@@ -1,0 +1,28 @@
+http://bbs.csdn.net/topics/391543210
+java Web项目前端jsp展现用jstl去控制，还是用js UI控制
+这一般分为三个层面，
+1.偏数据展示类的，用jsp,jstl,struts标签等等的，方便。
+2.偏交互类的，用js的template模板来渲染，业界出名的有arttemplate,undescore template,jquery template，
+3.直接上mvvm框架，比如angularjs,avalon,vue等，都是直接绑定标签。
+三个各有优缺，第1个最简单，没有技术门槛，第2个一般用于移动端，或pc端比较重交互的，比如活动页面，小的游戏，一个页面内多个画面的切换，比如适合。
+第3个，适合大中型项目，是未来趋势。其它的按照关键字，百度一般都有相应的答案。技术是为了解决问题，千万别为了技术而技术。项目偏小，项目组成员水平不可控，建议成本低的方式，否则选择偏中上的方案。
+
+新一代Java模板引擎Thymeleaf
+https://www.tianmaying.com/tutorial/using-thymeleaf
+
+浅谈jsp、freemarker、velocity区别
+http://blog.csdn.net/tjcyjd/article/details/16803877
+
+
+[页面模板框架对比] Apache Tiles VS Sitemesh
+http://blog.csdn.net/tbwood/article/details/40983143
+
+https://github.com/sitemesh/sitemesh3
+https://github.com/apache/tiles
+
+Sitemesh 3 的使用及配置
+http://www.cnblogs.com/luotaoyeah/p/3776879.html
+
+
+一步一步学JSP--JSTL（三）
+http://blog.csdn.net/ricciozhang/article/details/43372779
