@@ -1,0 +1,23 @@
+线上应用故障排查之一：高CPU占用
+http://www.blogjava.net/hankchen/archive/2012/05/09/377735.html
+
+top -H
+
+ps -mp pid -o THREAD,tid,time | sort -rn
+
+printf "%x\n" tid
+
+jstack pid | grep tid -A 30
+
+线上应用故障排查之二：高内存占用
+http://www.blogjava.net/hankchen/archive/2012/05/09/377736.html
+
+
+windows
+
+tasklist
+taskkill /f /pid 3108 /t 
+
+
+Java线程Dump分析工具--jstack
+http://www.cnblogs.com/softidea/p/5266647.html
