@@ -26,3 +26,11 @@ http://www.cnblogs.com/luotaoyeah/p/3776879.html
 
 一步一步学JSP--JSTL（三）
 http://blog.csdn.net/ricciozhang/article/details/43372779
+
+web.xml 中的context-param 、listener、 filter、servlet 加载顺序及其详解
+http://blog.csdn.net/nick357/article/details/14053727
+
+Java Servlet完全教程
+[en]http://howtodoinjava.com/servlets/complete-java-servlets-tutorial/
+[zh]http://www.importnew.com/14621.html
+
