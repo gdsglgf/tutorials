@@ -39,3 +39,8 @@ mvn package -Dmaven.test.skip=true
 # eclipse maven建立多模块工程
 - http://juvenshun.iteye.com/blog/305865
 - http://www.tuicool.com/articles/RzyuAj
+
+# jetty
+- http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html
+- http://www.blogjava.net/fancydeepin/archive/2012/06/23/maven-jetty-plugin.html
+
