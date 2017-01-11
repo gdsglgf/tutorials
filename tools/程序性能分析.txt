@@ -13,11 +13,5 @@ jstack pid | grep tid -A 30
 http://www.blogjava.net/hankchen/archive/2012/05/09/377736.html
 
 
-windows
-
-tasklist
-taskkill /f /pid 3108 /t 
-
-
 Java线程Dump分析工具--jstack
 http://www.cnblogs.com/softidea/p/5266647.html
