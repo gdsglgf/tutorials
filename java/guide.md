@@ -23,12 +23,13 @@ http://www.cnblogs.com/feiyangyan/p/4958249.html
 spring MVC json 日期格式转换配置
 http://www.cnblogs.com/woshimrf/p/5189435.html
 
+深入理解Spring MVC 思想
+http://www.cnblogs.com/baiduligang/p/4247164.html
 
-## Hadoop
-https://archive.apache.org/dist/hadoop/common/
+深入分析Spring 与 Spring MVC容器
+http://blog.csdn.net/oleichang/article/details/51491847
 
-https://github.com/steveloughran/winutils<br>
-https://github.com/srccodes/hadoop-common-2.2.0-bin
+
 
 ### Windows下的搭建Spark
 https://www.zhihu.com/question/35973656/answer/89372462<br>

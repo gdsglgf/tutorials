@@ -1,3 +1,7 @@
+## Hadoop
+- https://archive.apache.org/dist/hadoop/common/
+- https://github.com/steveloughran/winutils
+- https://github.com/srccodes/hadoop-common-2.2.0-bin
 
 ## hadoop wordcount demo
 1. 在HDFS上创建输入文件夹
