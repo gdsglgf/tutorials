@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="baseDir">log4j2</Property>
+		<Property name="filename">log4j2/app.txt</Property>
+	</Properties>
+	<ThresholdFilter level="trace" />
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+		<File name="File" fileName="${filename}">
+			<PatternLayout>
+				<pattern>%d %p %C{1.} [%t] - %m%n</pattern>
+			</PatternLayout>
+		</File>
+
+		<!-- filePttern="${baseDir}/$${date:yyyy-MM-dd-HH-mm}/app-%d{yyyy-MM-dd-HH-mm-ss}-a%i.log.gz"  .gz 表示文件压缩 -->
+		<RollingFile name="RollingFile" fileName="${baseDir}/app.log"
+			filePttern="${baseDir}/$${date:yyyy-MM-dd-HH-mm}/app-%d{yyyy-MM-dd-HH-mm-ss}-a%i.log.gz">
+			<PatternLayout pattern="%d %p %c{1.} [%t] - %m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="250 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="100">
+				<Delete basePath="${baseDir}" maxDepth="2">
+					<IfFileName glob="*/app-*.log.gz">
+						<IfLastModified age="30d">
+							<IfAny>
+								<IfAccumulatedFileSize exceeds="100 GB" />
+								<IfAccumulatedFileCount exceeds="10" />
+							</IfAny>
+						</IfLastModified>
+					</IfFileName>
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.examples" level="trace" additivity="false">
+			<AppenderRef ref="RollingFile" />
+			<AppenderRef ref="File" />
+			<AppenderRef ref="STDOUT" />
+		</Logger>
+
+		<Root level="error">
+			<AppenderRef ref="STDOUT" />
+		</Root>
+	</Loggers>
+</Configuration>
