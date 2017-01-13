@@ -3,3 +3,7 @@
 
 copy 1.txt + 2.txt all.txt
 type *.txt >> all.txt
+
+## show system info
+systeminfo
+
