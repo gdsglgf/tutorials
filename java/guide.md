@@ -32,22 +32,22 @@ http://blog.csdn.net/oleichang/article/details/51491847
 
 
 ### Windows下的搭建Spark
-https://www.zhihu.com/question/35973656/answer/89372462<br>
-http://blog.csdn.net/u011513853/article/details/52865076
+- https://www.zhihu.com/question/35973656/answer/89372462
+- http://blog.csdn.net/u011513853/article/details/52865076
 
 
-rss
-http://www.nationalgeographic.com.cn/index.php?m=content&c=feed
-
-http://rss.sina.com.cn/tech/rollnews.xml<br>
-http://blog.csdn.net/gtuu0123/article/details/4949262
+## rss
+- http://www.nationalgeographic.com.cn/index.php?m=content&c=feed
+- http://rss.sina.com.cn/tech/rollnews.xml
+- http://blog.csdn.net/gtuu0123/article/details/4949262
 
 ## stackoverflow
-http://stackoverflow.com/questions/4834721/java-read-bz2-file-and-uncompress-parse-on-the-fly<br>
-http://stackoverflow.com/questions/3402735/what-is-simplest-way-to-read-a-file-into-string<br>
-http://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java<br>
-http://stackoverflow.com/questions/3038392/do-java-arrays-have-a-maximum-size<br>
-http://stackoverflow.com/questions/373833/best-xml-parser-for-java<br>
+- http://stackoverflow.com/questions/4834721/java-read-bz2-file-and-uncompress-parse-on-the-fly
+- http://stackoverflow.com/questions/3402735/what-is-simplest-way-to-read-a-file-into-string
+- http://stackoverflow.com/questions/1053467/how-do-i-save-a-string-to-a-text-file-using-java
+- http://stackoverflow.com/questions/3038392/do-java-arrays-have-a-maximum-size
+- http://stackoverflow.com/questions/373833/best-xml-parser-for-java
+- http://stackoverflow.com/questions/18287711/spring-mvc-3-localechangeinterceptor
 
 
 ## xml parser
@@ -63,22 +63,21 @@ http://blog.csdn.net/andie_guo/article/details/24844351
 ### SAX XML Parser解析、生成XML文件
 http://blog.csdn.net/andie_guo/article/details/24851077
 
-## html parser
-Jsoup, htmlparser
-http://blog.csdn.net/lubeijing2008xu/article/details/8019712
-http://free0007.iteye.com/blog/1131163
-http://www.cnblogs.com/coding-hundredOfYears/archive/2012/12/15/2819217.html
+## html parser(Jsoup, htmlparser)
+- http://blog.csdn.net/lubeijing2008xu/article/details/8019712
+- http://free0007.iteye.com/blog/1131163
+- http://www.cnblogs.com/coding-hundredOfYears/archive/2012/12/15/2819217.html
 
 
 ## Message Queue
-http://kafka.apache.org/
-	http://blog.jobbole.com/75328/
+### [kafka](http://kafka.apache.org/ "kafka")
+- http://blog.jobbole.com/75328/
 
-http://activemq.apache.org/
-	http://www.cnblogs.com/xwdreamer/archive/2012/02/21/2360818.html
-	http://shmilyaw-hotmail-com.iteye.com/blog/1897635
+### [activemq](activemq "activemq")
+- http://www.cnblogs.com/xwdreamer/archive/2012/02/21/2360818.html
+- http://shmilyaw-hotmail-com.iteye.com/blog/1897635
 
 
 ## JAVA EE
-http://lib.csdn.net/zhhy88/chart/Struts2
-http://lib.csdn.net/sinat_36900848/chart/Java%20EE
+- http://lib.csdn.net/zhhy88/chart/Struts2
+- http://lib.csdn.net/sinat_36900848/chart/Java%20EE
