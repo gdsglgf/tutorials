@@ -75,3 +75,12 @@ java -ea
 
 run configurations-->arguments-->vm arguments中添加 -ea 参数
 ```
+
+## set tab size
+```
+window->preferences->General->Editor->Text Editor->Display Tab Width
+window->preferences->Java->Code Style->Formatter设置页面，Edit，在弹出的Editor profile窗口中，Indentation卡片，设置Indentation Size和Tab Size。
+
+eclipse console tab size
+window->preferences->Run/Debug->Console->Displayed tab width
+```
