@@ -18,5 +18,6 @@ HashMap与Hashtable的区别
 
 通过并发 Collections 进行多线程编程
 - https://www.ibm.com/developerworks/cn/java/j-5things4.html
+- http://www.uml-diagrams.org/java-7-concurrent-uml-class-diagram-example.html
+- http://docs.oracle.com/javase/tutorial/essential/concurrency/index.html
 
-http://www.uml-diagrams.org/java-7-concurrent-uml-class-diagram-example.html
