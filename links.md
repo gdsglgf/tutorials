@@ -38,4 +38,12 @@ http://jsbin.com/
 http://logging.apache.org/log4j/<br>
 http://blog.csdn.net/anlina_1984/article/details/5313023
 
+## Programming Learning
+http://www.runoob.com/
 
+## Web data feed
+- http://www.nationalgeographic.com.cn/
+- http://www.nationalgeographic.com.cn/index.php?m=content&c=feed
+
+- http://www.dailyenglishquote.com/
+- http://www.dailyenglishquote.com/feed/
