@@ -41,3 +41,16 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 ```
+
+## Text Editor
+11款最好的JavaScript源代码编辑器
+- https://www.evget.com/article/2014/6/24/21223.html
+
+- http://codemirror.net
+
+推荐15款在线JavaScript编辑器
+- http://sc.chinaz.com/info/151028217039.htm
+
+10个程序员最喜欢的 HTML和CSS 等在线代码编辑器
+- http://yusi123.com/3581.html
+
