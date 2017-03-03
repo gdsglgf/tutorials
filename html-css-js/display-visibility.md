@@ -32,10 +32,15 @@ $("#id").show()表示display:block,
 $("#id").hide()表示display:none;
 $("#id").toggle()切换元素的可见状态。如果元素是可见的，切换为隐藏的；如果元素是隐藏的，切换为可见的。
 
+# 设置display属性
 $("#id").css('display', 'none');
 $("#id").css('display', 'block');
 或
 $("#id")[0].style.display = 'none';
+
+# 获取display属性
+$("#id").css('display');
+document.getElementById('id').style.display
 
 $("#id")返回的是JQuery, 它是个集合肯定没有display属性
 ```
