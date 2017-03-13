@@ -36,6 +36,19 @@ git rm -r --cached ignore_file
 
 4: git push origin HEAD --force 删除代码库之前提交的记录
 
+git reset HEAD filename  从暂存区中移除文件
+
+## 找回删除的文件
+```
+# 使用例子
+git rm abbr_data
+git status
+git checkout -- abbr_data
+git reset HEAD abbr_data
+git status
+git checkout -- abbr_data
+```
+
 // 设置全局
 git config --global user.name "Author Name"
 git config --global user.email "Author Email"
