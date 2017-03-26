@@ -41,3 +41,9 @@ http://blog.csdn.net/amandaxy/article/details/7327981
 ### PyMySQL
 pip install PyMySQL<br>
 https://github.com/PyMySQL/PyMySQL
+
+
+## python 字符与编码
+- 深入浅出Python字符与编码 http://geek.csdn.net/news/detail/188432
+- 从Python 3的bytes/str之别学编码Unicode http://www.ituring.com.cn/article/61192
+- http://eli.thegreenplace.net/2012/01/30/the-bytesstr-dichotomy-in-python-3/
