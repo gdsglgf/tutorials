@@ -44,3 +44,8 @@ mvn package -Dmaven.test.skip=true
 - http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html
 - http://www.blogjava.net/fancydeepin/archive/2012/06/23/maven-jetty-plugin.html
 
+
+mvn exec:java -Dexec.mainClass="com.module.Main"
+mvn exec:java -Dexec.mainClass="com.module.Main" -Dexec.args="arg0 arg1 arg2"
+mvn exec:java -Dexec.mainClass="com.module.Main" -Dexec.classpathScope=test
+mvn exec:java -Dexec.mainClass="com.module.Main" -Dexec.classpathScope=runtime
