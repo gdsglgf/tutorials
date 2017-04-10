@@ -1,7 +1,7 @@
 
-![](https://github.com/gdsglgf/toolkit/raw/master/hardware/sd-file-format.png)
-![](https://github.com/gdsglgf/toolkit/raw/master/hardware/sd-types.png)
-![](https://github.com/gdsglgf/toolkit/raw/master/hardware/sd-read-write-speed.png)
+![](https://github.com/gdsglgf/tutorials/raw/master/hardware/sd-file-format.png)
+![](https://github.com/gdsglgf/tutorials/raw/master/hardware/sd-types.png)
+![](https://github.com/gdsglgf/tutorials/raw/master/hardware/sd-read-write-speed.png)
 
 ## links
 - SD/SDHC/SDXC区别
