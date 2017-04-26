@@ -84,3 +84,19 @@ window->preferences->Java->Code Style->Formatter设置页面，Edit，在弹出�
 eclipse console tab size
 window->preferences->Run/Debug->Console->Displayed tab width
 ```
+
+## editor does not contain a main type
+java maven project
+delete the project and import it again then it is ok.
+
+
+## 快捷键失效
+按 ctrl + alt + 向上箭头 向下复制一行代码时, windows的整个屏幕都倒转过来.
+
+原因: 这是与英特尔图形和媒体控制面板中的系统快捷键冲突.
+解决方法: 使用不同的快捷键解决冲突或者禁用英特尔图形和媒体的快捷键.
+
+禁用英特尔图形和媒体的快捷键方法:
+- 桌面鼠标右键->图形选项->快捷键->禁用
+- 控制面板->英特尔图形和媒体控制面板->选项和支持->快捷键管理器->启用. 把启用的勾去掉, 保存.
+
