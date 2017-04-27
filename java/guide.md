@@ -73,7 +73,7 @@ http://blog.csdn.net/andie_guo/article/details/24851077
 ### [kafka](http://kafka.apache.org/ "kafka")
 - http://blog.jobbole.com/75328/
 
-### [activemq](activemq "activemq")
+### [activemq](http://activemq.apache.org/ "activemq")
 - http://www.cnblogs.com/xwdreamer/archive/2012/02/21/2360818.html
 - http://shmilyaw-hotmail-com.iteye.com/blog/1897635
 
