@@ -41,3 +41,11 @@ $ YOUR_SPARK_HOME/bin/spark-submit \
   target/scala-2.11/simple-project_2.11-1.0.jar
 
 具体参数http://spark.apache.org/docs/latest/submitting-applications.html
+
+
+## xampp apache 无法启动
+1．80端口冲突，解决方法： 
+打开目录C:\xampp\apache\conf(我的安装目录为C:\xampp)下的httpd.conf文件，将Listen 80和 ServerName localhost:80中的80改为8081或其它值（尽量不要使用0－1023端口，这个是系统保留端口），要保持一致。 
+
+2．监听端口443冲突，解决方法： 
+打开目录C:\xampp\apache\conf\extra (我的安装目录为C:\xampp)下的httpd-ssl.conf文件，将Listen 443这句注释掉：# Listen 443或将443改为4433或其它值（尽量不要使用0－1023）。
