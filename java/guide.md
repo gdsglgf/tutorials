@@ -81,3 +81,6 @@ http://blog.csdn.net/andie_guo/article/details/24851077
 ## JAVA EE
 - http://lib.csdn.net/zhhy88/chart/Struts2
 - http://lib.csdn.net/sinat_36900848/chart/Java%20EE
+
+## Properties File Format
+- https://docs.oracle.com/cd/E23095_01/Platform.93/ATGProgGuide/html/s0204propertiesfileformat01.html
