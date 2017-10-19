@@ -30,3 +30,11 @@ JSON.parse(text)
 stu = {"name":"tom", "age":20}
 JSON.stringify(stu)
 ```
+
+## IIFE (immediately-invoked function expression) 执行一次的函数表达式
+- https://toddmotto.com/what-function-window-document-undefined-iife-really-means/
+```
+(function(){})();
+
+(function (window, document, undefined) {})(window, document);
+```
